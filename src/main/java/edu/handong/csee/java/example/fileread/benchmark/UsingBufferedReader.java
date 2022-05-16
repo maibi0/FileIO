@@ -13,7 +13,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
-        BufferedReader inputStream= new BufferedReader(new FileReader(DumpDataWriter.input1MB));
+        BufferedReader inputStream= new BufferedReader(new FileReader(args[0]));
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
@@ -24,7 +24,7 @@ public class UsingBufferedReader {
 
         //-------------- Test reading 10 MB file. --------------------
 
-        StopWatch.start();
+        /*StopWatch.start();
 
         BufferedReader inputStream2= new BufferedReader(new FileReader(DumpDataWriter.input10MB));
         while (inputStream2.read()!=-1){}
@@ -32,7 +32,7 @@ public class UsingBufferedReader {
         long duration2 = StopWatch.stop();
         System.out.println(duration2 + " milsec");
 
-        inputStream2.close();
+        inputStream2.close();*/
 
         /*
         //-------------- Test reading 100 MB file. --------------------
